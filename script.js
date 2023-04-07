@@ -111,12 +111,8 @@ function buscaTexto(textoABuscar, textoObj, ehFrase){
 function tiraDestaque(){
 	let jaBuscado = document.querySelector('[buscado]');
 
-
 	if (jaBuscado !==  null){
     let buscados = document.querySelectorAll('[buscado]');
-		for(let b of buscados){
-			let conteudo = b.innerText;
-			b.replaceWith(conteudo)
-		}
+		buscados.forEach(b => b.replaceWith(b.innerText))
 	}
 }

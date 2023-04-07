@@ -4,8 +4,8 @@ body{
 }
 
 .backBut{
-	background: LightSeaGreen;
-	border: 0.5px solid black;
+	background: none;/*LightSeaGreen;*/
+	border: 0.5px solid black;/**/
 	border-radius: 100%;
 	height: 35px;
 	width: 35px;
@@ -33,7 +33,7 @@ body{
 	margin-top: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	background: var(--color-esc);
+	background: white;/*linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(34,195,187,1) 100%); /*var(--color-esc);*/
 	text-align: center;
 	color: var(--default);
 	padding: 20px;
@@ -45,8 +45,8 @@ body{
 }
 
 label{
-	margin-top: 15px;/*
-	background: none;/*
+	margin-top: 15px;
+	background: white;/*
 	box-shadow: inset 0 0 25px -8px #151515;*/
 	padding: 3px;
 	display: flex;
@@ -80,21 +80,23 @@ input{
 }
 
 .cadBut{
-	background: var(--color-esc);
+	background: var(--color-cla);
 	display: block;
 	position: relative;
 	left: 40px;
-	border: 1px solid black;
-	box-shadow: DarkCyan 5px 0 12px 0;
+	border: 1px solid black;/*
+	box-shadow: DarkCyan 5px 0 12px 0;*/
 	width: 150px;
 	margin: 25px 0;
 	height: 30px;
 	border-radius: 10px;
+	color: white;
 }
 
 .cadBut:active{
 	box-shadow: none;
-	background-color: #20b3afl;
+	background-color: white; /*#20b3afl;*/
+	color: var(--color-cla);
 }
 
 p, a{
