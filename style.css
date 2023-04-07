@@ -1,0 +1,171 @@
+#developmentInfo {
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+}
+
+body {
+  font-family: helvetica neue;
+  font-weight: 299;
+  webkit-word-break: break-word;
+  word-break: break-word;
+  user-select: text;
+  --turq-esc: #49b9ba;
+  --turq-cla: #c2ecf6;
+  -webkit-tap-highlight-color: transparent;
+  webkit-tap-highlight-color: transparent;
+}
+
+.barra {
+  margin: auto;
+  width: 170px;
+  height: 30px;
+  position: absolute;
+  background: #c2ecf6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#bar {
+  font-size: 23px;
+  background: var(--turq-esc);
+  vertical-align: middle;
+  text-align: center;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+}
+
+header {
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3em;
+  width: 100%;
+  background: var(--turq-esc);
+  justify-content: space-between;
+	align-items: center;
+  user-select: none;
+}
+
+.headerBts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  width: 20%;
+}
+
+#searchInput {
+  display: flex;
+  position: fixed;
+  top: 3em;
+  height: 3em;
+  width: 100%;
+  justify-content: center;
+  background: var(--turq-esc);
+  visibility: hidden;
+}
+
+#searchInput input {
+  height: 60%;
+  width: 70%;
+  background: none;
+  border: 1px solid black;
+  outline: none;
+}
+
+#searchInput input::placeholder {
+  color: black;
+}
+
+#searchInput button {
+	height: 67%;
+  width: 10%;
+  font-size: 15px;
+  background: none;
+  border: 1px solid black;
+}
+
+#menuBut {
+  font-size: 2em;
+  text-align: center;
+}
+
+#searchBut {
+  font-size: 2em;
+  align-items: center;
+  border: none;
+}
+
+.navbar {
+  text-align: center;
+  z-index: 3;
+  font-size: 1.2em;
+  background: var(--turq-esc);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  min-height: 100%;
+  transform: translateX(-103%);
+  transition: .5s;
+}
+
+.navbar a {
+  display: block;
+  font-weight: 300;
+  padding: 15px 0;
+  color: #000;
+  text-decoration: none;
+  border-top: 0.1px solid black;
+  border-bottom: 0.1px solid black;
+}
+
+.navbar a:hover {
+  font-size: 20px;
+}
+
+.navbar a:active {
+  font-weight: 400;
+}
+
+.temas a {
+  color: #000;
+  font-weight: 400;
+}
+
+.temas a:active {
+  font-weight: 405;
+}
+
+#conteudo {
+  position: absolute;
+  font-size: 1rem;
+  z-index: 1;
+  margin: 3em 8%;
+  padding-top: 5%;
+}
+
+#conteudo p{
+	text-indent: 15px;
+}
+
+.destaque{
+	background-color: #54d9d9;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 20px 0;
+  border-top: 0.5px solid #999;
+  color: #999;
+  text-align: center;
+}
+
+.txtFoundInSearch{
+  background-color: #67b7b805;
+	font-weight: 380;
+}

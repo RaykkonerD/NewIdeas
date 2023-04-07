@@ -1,0 +1,115 @@
+body{
+	font-family: heveltica neue;
+	font-weight: 300;
+}
+
+.backBut{
+	background: LightSeaGreen;
+	border: 0.5px solid black;
+	border-radius: 100%;
+	height: 35px;
+	width: 35px;
+	font-size: 18px;
+	vertical-align: center;
+	display: flexbox;
+	justify-content: center;
+}
+
+.backBut:active{
+	background-color: #41a8a8;
+}
+
+.inpEnter::placeholder{
+	font-family: heveltica neue;
+	font-weight: 300;
+	color: var(--default);
+}
+
+#signDiv{
+	--default: #000;
+	--color-esc: LightSeaGreen;
+	--color-cla: #22c3bb;
+	position: relative;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	background: var(--color-esc);
+	text-align: center;
+	color: var(--default);
+	padding: 20px;
+	box-shadow: 15px 0 18px 0 silver;
+	width: 230px;
+	height: 330px;
+	border: 1px solid var(--default);
+	border-radius: 10px;
+}
+
+label{
+	margin-top: 15px;/*
+	background: none;/*
+	box-shadow: inset 0 0 25px -8px #151515;*/
+	padding: 3px;
+	display: flex;
+	border: 1px solid var(--default);
+	height: 24px;
+	border-radius: 10px;
+}
+
+img{
+	position: relative;
+	/*filter: invert(80%);*/
+	top: 4px;
+	--lado: 15px;
+	height: var(--lado);
+	width: var(--lado);
+}
+
+input{
+	outline: none;
+}
+
+.inpEnter{
+	background: none;
+	border: none;
+	height: 22px;
+	color: var(--default);
+}
+
+#emailLabel{
+	margin-top: 40px;
+}
+
+.cadBut{
+	background: var(--color-esc);
+	display: block;
+	position: relative;
+	left: 40px;
+	border: 1px solid black;
+	box-shadow: DarkCyan 5px 0 12px 0;
+	width: 150px;
+	margin: 25px 0;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.cadBut:active{
+	box-shadow: none;
+	background-color: #20b3afl;
+}
+
+p, a{
+	font-size: 14px;
+	color: var(--cor-esc);
+}
+
+a:hover, a:active{
+	color: grey31;
+}
+
+a:active{
+	text-decoration: none;
+}
+
+p{
+	margin-bottom: 30px;
+}
